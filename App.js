@@ -2,8 +2,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import AddTodoScreen from './screens/AddTodoScreen';
-import ViewTodosScreen from './screens/ViewTodosScreen';
+import AddTodoScreen from './src/screen/AddTodoScreen';
+import ViewTodosScreen from './src/screen/ViewTodosScreen';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const Stack = createStackNavigator();

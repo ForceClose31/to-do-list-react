@@ -2,7 +2,7 @@
 import React, { useState, useCallback } from 'react';
 import { View, TextInput, Button, StyleSheet, Alert, KeyboardAvoidingView, Platform } from 'react-native';
 import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../firebase';
+import { db } from '../config/firebaseConfig';
 
 const AddTodoScreen = ({ navigation }) => {
   const [todo, setTodo] = useState('');

@@ -2,8 +2,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { View, FlatList, Button, StyleSheet, RefreshControl } from 'react-native';
 import { collection, getDocs, updateDoc, doc } from 'firebase/firestore';
-import { db } from '../firebase';
-import TodoItem from '../components/TodoItem';
+import { db } from '../config/firebaseConfig';
+import TodoItem from '../componen/TodoItem';
 
 const ViewTodosScreen = ({ navigation }) => {
   const [todos, setTodos] = useState([]);
